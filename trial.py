@@ -1,7 +1,32 @@
-print('hello')
 
-x=1
-y=2
-z=x+y
-z=z+5
-print(z)
+
+students=[
+    {
+        'name':"ram",
+        "country":[
+            {
+                'name':"nepal",
+                'capital':"ktm"
+            },
+            {
+                'name':"india",
+                'capital':"delhi"
+            }
+        ]
+        
+    },
+    {
+        'name':"sita",
+        "country":[
+            {
+                'name':"nepal",
+                'capital':"pokhara"
+            },
+            {
+                'name':"china",
+                'capital':"beijing"
+            }
+        ]
+
+    }
+]
