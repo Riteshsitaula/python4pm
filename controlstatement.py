@@ -69,20 +69,51 @@
 #     print(x)
 
 
-x= input('enter 1st number :')
-y= input('enter 2nd number :')
-option= input(''' 
-              1.add
-              2.sub
-              3.mul
-              4. div''')
-print("choose one option")
-if option== '1' :
-    z=x+y
-    print(z)
-elif option=='2':
-    z=x-y
-    print(z)
+# x= int (input ('enter 1st number :'))
+# y= int (input('enter 2nd number :'))
+# print("choose one option :") 
+# option = input (''' 
+#               1. add
+#               2. sub
+#               3. mul
+#               4. div ''')
+
+# if option=="1":
+#     print(" result :",x + y)
+# elif option=='2':
+#     print(" result :",x-y)
+# elif option=='3':
+#     print(" result :",x*y)
+# else:
+#     print (" result :",x/y)
+
+
+amount='20000'
+pin="1234"
+pin1 = input("enter your pin :")
+if pin1==pin :
+ print("welcome to the system")
+ print("what do you want")
+ option= input ('''
+          1. check balance
+          2. widthdraw amount''')
+ if option == "1":
+  print("your current balance is :",amount)
+ elif option== "2":
+    x=input("enter the amount")
+    if x< amount:
+     print('insufficient')
+    elif x==amount:
+     print('cannot withdraw all amount')
+    else:
+     print (' withdrawn successful')
+    #  z = amount-x
+    #  print(f"Remaining balance: {z}") 
+  
+ else:
+  print("input invalid")
+
+  
+
 else:
-    z=x*y
-    print (z)
+ print("incorrect pin entered")
