@@ -88,32 +88,85 @@
 #     print (" result :",x/y)
 
 
-amount='20000'
-pin="1234"
-pin1 = input("enter your pin :")
-if pin1==pin :
- print("welcome to the system")
- print("what do you want")
- option= input ('''
-          1. check balance
-          2. widthdraw amount''')
- if option == "1":
-  print("your current balance is :",amount)
- elif option== "2":
-    x=input("enter the amount")
-    if x< amount:
-     print('insufficient')
-    elif x==amount:
-     print('cannot withdraw all amount')
-    else:
-     print (' withdrawn successful')
-    #  z = amount-x
-    #  print(f"Remaining balance: {z}") 
-  
- else:
-  print("input invalid")
 
-  
+# wronggggggg
 
-else:
- print("incorrect pin entered")
+# amount='20000'
+# pin="1234"
+# pin1 = input("enter your pin :")
+# if pin1==pin :
+#  print("welcome to the system")
+#  print("what do you want")
+#  option= input ('''
+#           1. check balance
+#           2. widthdraw amount''')
+#  if option == "1":
+#   print("your current balance is :",amount)
+#  elif option== "2":
+#     x = input("enter the amount")
+#     if x< amount:
+#        print('withdrawn successful')
+#     elif x==amount:
+#        print('cannot withdraw all amount')
+#     else:
+#        print (' insufficient')
+#     #  z = amount-x
+#     #  print(f"Remaining balance: {z}") 
+  
+#  else:
+#   print("input invalid")
+# else:
+#  print("incorrect pin entered")
+
+
+
+
+
+                                 #   loop
+# x=1
+# while x<=10 :
+#     print(x)
+#     x+=1
+
+
+# data= [11,22,33,44]
+# a=0
+# while  a< len(data):
+#     print (data [a])
+#     a+=1
+
+# x=0
+# while x<=20:
+#     print(x)
+#     x+=2
+# y=1
+# while y<=20: 
+#     print(y)
+#     y+=2
+
+
+# data=[
+#     [10,20,30,40,50],
+#     [50,100,150,200,250]
+# ]
+# a=0
+# ft=0
+# lt=0
+# # a= print(data[0]+data[1])
+# while  a<len (data):
+#    ft+=data[a][0] 
+#    lt+=data[a][-1]
+#    a+=1
+# print(ft)
+# print(lt)
+   
+
+# a=int(input("enter a number"))
+# a=1
+# b=1
+# while a<=10:
+#  print(f"1 * {b}={a}")
+#  a+=1
+#  b+=1
+
+ 
