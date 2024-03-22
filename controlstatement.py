@@ -161,12 +161,20 @@
 # print(lt)
    
 
-# a=int(input("enter a number"))
-# a=1
-# b=1
-# while a<=10:
-#  print(f"1 * {b}={a}")
-#  a+=1
-#  b+=1
+
+a=1
+b=1
+while a<=10:
+ print(f"1 * {b}={a}")
+ a+=1
+ b+=1
+
+
+x=int(input("enter a number"))
+y=1
+while y<=10:
+ z= x*y
+ print(f"{x}*{y}={z}")
+ y+=1
 
  

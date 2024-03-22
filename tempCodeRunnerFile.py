@@ -1,5 +1,3 @@
-data= [11,22,33,44]
-a=0
-while  a< len(data):
-    print (data [a])
-    a+=1
+while y<=10:
+#  print(f"{x}*{y}={z}")
+#  y+=1
