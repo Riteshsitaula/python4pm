@@ -176,5 +176,54 @@
 #  z= x*y
 #  print(f"{x}*{y}={z}")
 #  y+=1
+# data=['ram','shyam']
+# for name in data:
+#     print (name)
 
- 
+# users=[
+#     ['ram', 'sita', 'gita'],
+#     ['hari','shyam', 'gopal'],
+# ]
+# for user in users:
+#     for name in  users:
+#         print(name)
+
+
+# lang= 'nep'
+# match lang:
+#     case 'nep':
+#         print('nepali')
+#     case 'eng':
+#         print ('english')
+#     case _ :
+#         print('other language')
+
+# a=int(input('enter 1st number'))
+# b=int(input('enter 2nd number'))
+# x=input('enter operator :')
+# match x:
+#     case '+':
+#         print(a+b)
+#     case'-':
+#         print (a-b)
+#     case '*':
+#         print(a*b)
+#     case '/':
+#         print (a/b)
+#     case _:
+#         print('operator unable')
+
+users=[
+    ['ram', 'sita', 'ram'],
+    ['hari','ram', 'gopal'],
+    ['ram', 'gopal', 'shyam']
+]
+name= input('enter name :')
+name_found=False
+for user in  users:
+    if name in user:
+        print(f'{name} is found')
+        name_found=True
+if not name_found:
+     print(f'{name}is not found')
+        
