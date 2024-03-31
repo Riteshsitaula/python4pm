@@ -213,17 +213,73 @@
 #     case _:
 #         print('operator unable')
 
-users=[
-    ['ram', 'sita', 'ram'],
-    ['hari','ram', 'gopal'],
-    ['ram', 'gopal', 'shyam']
-]
-name= input('enter name :')
-name_found=False
-for user in  users:
-    if name in user:
-        print(f'{name} is found')
-        name_found=True
-if not name_found:
-     print(f'{name}is not found')
+
+
+
+
+# users=[
+#     ['ram', 'sita', 'ram'],
+#     ['hari','ram', 'gopal'],
+#     ['ram', 'gopal', 'shyam']
+# ]
+# new_name= input('enter name :')
+# name_found=False
+# for user in  users:
+#      for name in user:
+#           if name==new_name:
+#                print(name)
+#                name_found=True
+   
+# if not name_found:
+#      print(f'{name}is not found')
         
+
+# users=[
+#     {'name': "ram",'gender':"male"},
+#     {'name': "sita",'gender':"female"},
+#     {'name': "laxman",'gender':"female"}
+# ]
+# names=input("enter gender :")
+# for gender in users:
+#     if gender['gender'] == "male":
+#      print('male')
+#      elif 
+#     else:
+#        print('female')
+
+
+
+
+# numbers=[]
+# num=int(input('number of times'))
+# for a in range (num):
+#     n=int(input('enter number'))
+#     numbers.append(n)
+# for y in numbers:
+#     if y % 2 == 0:
+#         print (y)
+
+
+    
+
+# marks=[]
+# num=int(input('how many students'))
+# for a in range (num):
+#     b=str(input('enter name'))
+#     m=int(input('enter marks in math'))
+#     n=int(input('enter marks in science'))
+#     o=int(input('enter marks in social'))
+#     p=int(input('enter marks in english'))
+#     q=int(input('enter marks in nepali'))
+#     marks.append([b,m,n,o,p,q])
+# for c in marks:
+#     total=(m+n+o+p+q)
+#     per=((total*100)/500)
+#     print('name of student=',b)
+#     print ('math = ',m )
+#     print (' science= ',n )
+#     print (' social= ',o )
+#     print ('english= ',p )
+#     print (' nepali= ',q )
+#     print('total =', total)
+#     print('percentage =', per)
