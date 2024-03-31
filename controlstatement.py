@@ -283,3 +283,4 @@
 #     print (' nepali= ',q )
 #     print('total =', total)
 #     print('percentage =', per)
+
