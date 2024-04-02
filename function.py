@@ -67,8 +67,16 @@
 #         else:
 #          print(job['title'],"job is not expired")
 
-        
+# import os
+# print(os. getcwd())        
 
+# os.mkdir("students")
 
+# os.rmdir("students")
+
+# import sys
+
+# print(sys.version_info)
+# print(sys. version)
 
 

@@ -1,0 +1,7 @@
+name of book =None , price of book =None , publication =Nonename of book =math , price of book =999 , publication =abcname of book =math , price of book =999 , publication =abcname of book =math , price of book =658 , publication =asdname of book =fdsd , price of book =654 , publication =dadname of book =324 /n , price of book =5 /n, publication =54/nname of book =math 
+ , price of book =999 
+, publication =abc
+ 
+name of book =ram 
+ , price of book =555 
+, publication =23
