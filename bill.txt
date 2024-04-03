@@ -1,5 +1,5 @@
 
 you purchased :- 
- company=hp 
+ company=lenovo 
  model = 5th gen 
  price=60,000
