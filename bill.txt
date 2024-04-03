@@ -1,0 +1,5 @@
+
+you purchased :- 
+ company=hp 
+ model = 5th gen 
+ price=60,000

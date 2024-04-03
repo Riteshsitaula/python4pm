@@ -48,4 +48,67 @@
 
 
 
+obj=open('bill.txt',"w")
+print("\n choose company")
+option = input (''' 
+               1. dell
+               2. lenovo
+               3. hp
+                 ''')
+
+if option=="1":
+    print("\n choose model")
+    option1= input('''
+                   1. dell 5th gen  (Rs.60,000)
+                   2. dell 7th gen  (Rs.75,000)
+                   ''')
+    
+    if option1 == "1":
+      #  print("\n company=dell \n model = 5th gen \n price=60,000")
+        obj.write("\n you purchased :- \n company=dell \n model = 5th gen \n price=60,000")
+    elif option1=="2":
+        obj.write("\n you purchased :- \n company=dell \n model = 7th gen \n price=75,000")
+        #print("\n company=dell \n model = 7th gen \n price=75,000")
+    else:
+     print('invalid input')
+
+elif option=="2":
+    print("\n choose model")
+    option2=input('''
+                   1. lenovo 5th gen  (Rs.60,000)
+                   2. lenovo 7th gen  (Rs.75,000)
+                   ''')
+    
+    if option2 == "1":
+      #  print("\n company=lenovo \n model = 5th gen \n price=60,000")
+        obj.write("\nyou purchased :- \n company=lenovo \n model = 5th gen \n price=60,000")
+    elif option2=="2":
+        obj.write("\nyou purchased :- \n  company=lenovo \n model = 7th gen \n price=75,000")
+        #print("\n company=lenovo \n model = 7th gen \n price=75,000")
+    else:
+     print('invalid input')
+
+elif  option=="3":
+    print("\n choose model")
+    option3=input('''
+                   1. hp 5th gen  (Rs.60,000)
+                   2. hp 7th gen  (Rs.75,000)
+                   ''')
+    
+    if option3 == "1":
+      #  print("\n company=hp \n model = 5th gen \n price=60,000")
+        obj.write("\nyou purchased :- \n company=hp \n model = 5th gen \n price=60,000")
+    elif option3=="2":
+        obj.write("\n you purchased :- \n company=hp \n model = 7th gen \n price=75,000")
+        #print("\n company=hp \n model = 7th gen \n price=75,000")
+    else:
+     print('invalid input')
+
+else:
+    print('invalid input')
+
+
+    
+
+
 
