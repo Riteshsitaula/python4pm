@@ -1,0 +1,49 @@
+.intro{
+    background-color: aqua;
+    color: black;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+}
+
+.container{
+    width: 80%;
+    margin: auto;
+    background: green;
+    height: 500px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    /* display: flex; */
+    justify-content:space-between;
+}
+.box1{
+    width: 400px;
+    height: 200px;
+    background: wheat;
+    margin-left: 1px;
+    margin-top: 1px;
+}
+.box2{
+    width: 400px;
+    height: 200px;
+    background: rgb(136, 128, 128);
+    margin-left: 1px;
+    margin-top: 1px;
+}
+.box3{
+    width: 400px;
+    height: 200px;
+    background: gainsboro;
+    margin-left: 1px;
+    margin-top: 1px;
+}
+
+.box4{
+    width: 500px;
+    height: 200px;
+    background: gray;
+    margin-left: 1px;
+    margin-top: 1px;
+}

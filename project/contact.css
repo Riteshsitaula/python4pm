@@ -1,0 +1,204 @@
+*{ 
+    margin: 0 auto;
+    padding: 0 auto;
+    box-sizing: border-box;
+   background-color: rgb(141, 166, 168);
+}
+.header{
+    font-size: 2rem;
+    cursor: pointer;
+    padding: 5px 5px;
+    text-align:default;
+}
+.header:hover{
+    font-size: 2.04rem;
+}
+.navbar{
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1%;   
+    margin-left: 20px;
+    margin-right: 0%;
+    opacity: .1;
+    
+}
+.nav ul{
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    display:flex;
+    list-style:none;
+    margin: 20px 450px;     
+
+}
+.nav ul li{
+    cursor: pointer;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+.nav ul li a{
+    text-decoration: none;
+    color: rgb(112, 80, 80);
+    padding: 15px 20px;
+    transition: all 0.5s ease;
+
+}
+.nav ul li a:hover{
+    background-color: rgb(99, 105, 160);
+    color: rgb(190, 233, 219);
+    box-shadow: 0 0 10px rgb(152, 149, 189), 0 0 12px   rgb(152, 149, 189), 0 0 15px  rgb(152, 149, 189);
+    font-size: 1.6rem;
+    
+} 
+.underline{
+    color:rgb(112, 80, 80) ;
+}
+.underline:hover{
+   color:  rgb(190, 233, 219);
+}
+#contact{
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    background-color: rgb(141, 166, 168);
+    color: aliceblue;
+    padding: 20px 60px;
+}
+#contact h1{
+    color:rgb(45, 66, 66);
+
+}
+.form{align-items:center;
+    margin: 10px 400px;
+    display: flex;
+    flex-direction: column;
+    border: 3px solid rgb(52, 83, 83);
+    box-sizing: border-box;
+    align-items: center;
+    background-color: rgb(171, 194, 216);
+
+
+}
+.input{
+    padding: 7px 4px ;
+    margin: 10px;
+    
+    border:2px solid rgb(52, 83, 83);
+    outline: none;
+    background-color: rgba(128, 128, 128, 0.11);
+}
+input::placeholder{
+    color: rgb(45, 66, 66);
+}
+
+#msg{
+    padding: 7px 4px;
+    margin: 15px;
+    border: 2px solid rgb(52, 83, 83);
+    outline: none;
+    background-color: rgba(128, 128, 128, 0.11);
+}
+#msg::placeholder{
+    color:rgb(45,66,66);
+}
+#send{
+     padding: 5px 15px;
+     text-align: center;
+    border: 2px solid  rgb(52, 83, 83) ;
+    outline: none;
+    font-size: 1.1rem;
+    margin-bottom: 3px;    
+    background-color: rgba(82, 71, 71, 0.411);
+}
+#send:hover{
+cursor: pointer;
+box-shadow:0 0 10px rgb(0, 0, 0) ;
+}
+.heading{
+    margin-left: 45%;
+    margin-bottom: 3px;
+}
+#connect{
+    text-align: center;
+    font-size: 2rem;
+    color: rgba(0, 0, 0, 0.685);
+}
+.icons{ 
+    position: relative;
+    display: block;
+    height: 2px;
+    padding: 10px;
+font-size: 20px;
+margin-top: 10px;
+}
+#facebook {cursor: pointer;
+    display: inline;
+    border: 2px solid blue;
+    background-color: rgb(255, 255, 255);
+   
+    z-index: -1;
+    height: auto;
+    width: auto;
+    box-shadow: 0 0 1px rgb(46, 2, 204), 0 0 3px rgb(46, 2, 204), 0 0 5px rgb(46, 2, 204);
+}
+#facebook:hover{
+    box-shadow: 0 0 5px rgb(46, 2, 204), 0 0 8px rgb(46, 2, 204), 0 0 12px rgb(46, 2, 204);
+    background-color:white;
+    font-size: 3rem;
+}
+#insta {cursor: pointer;
+    display: inline;
+    border: 2px solid rgb(241, 15, 166);
+    background-color: rgb(240, 208, 224);
+   
+    z-index: -1;
+    height: auto;
+    width: auto;
+    box-shadow: 0 0 1px #cc027f, 0 0 3px #cc027f, 0 0 5px #cc027f;
+}
+#insta:hover{
+    box-shadow: 0 0 5px #cc027f, 0 0 8px #cc027f, 0 0 12px #cc027f;
+    background-color:white;
+    font-size: 3rem;
+}
+
+#twitter {cursor: pointer;
+    display: inline;
+    border: 2px solid rgb(0, 0, 0);
+    background-color: rgb(255, 255, 255);
+    
+    z-index: -1;
+    height: auto;
+    width: auto;
+    box-shadow: 0 0 1px rgb(0, 0, 0), 0 0 3px rgb(0, 0, 0), 0 0 5px rgb(0, 0, 0);
+}
+#twitter:hover{
+    box-shadow: 0 0 5px rgb(0, 0, 0), 0 0 8px rgb(0, 0, 0), 0 0 12px rgb(0, 0, 0);
+    background-color:white;
+    font-size: 3rem;
+}
+
+#whatsapp{cursor: pointer;
+    display: inline;
+    border: 2px solid green;
+    background-color: rgb(255, 255, 255);
+    color:blue;
+    z-index: -1;
+    height: auto;
+    width: auto;
+    box-shadow: 0 0 1px green, 0 0 3px green, 0 0 5px green;
+}
+#whatsapp:hover{
+    box-shadow: 0 0 5px green, 0 0 8px green, 0 0 12px green;
+    background-color:white;
+    font-size: 3rem;
+}
+.footer{
+    text-align: center;
+    color: rgb(198, 198, 207);
+    background-color:  rgb(67, 109, 126);
+    margin-top: 2%;
+}

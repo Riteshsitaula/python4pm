@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+
+    
+    <style>
+        body {
+    background-color: #f0f0f0;
+    font-family: 'Times New Roman', Times, serif;
+  }
+        .container {
+            max-width: 600px;
+            margin: 0 auto;
+            padding: auto;
+            margin-top: 0%;
+            
+        }
+        .formgroup {
+            margin-bottom: 5px;
+        
+        }
+        .formgroup label {
+            display: block;
+            font-weight: bold;
+            font-size: 1.2rem;
+        }
+        .formgroup input[type="text"],
+        .formgroup input[type="email"],
+        .formgroup input[type="tel"],
+        .formgroup input[type="date"],
+        .formgroup select {
+            width: 100%;
+            padding: 12px;
+            border: 1px solid #2903ff ;
+            border-radius: 10px;
+            box-sizing:border-box;
+            box-shadow:  0 0 3px rgb(0, 0, 255), 0 0 0px rgb(0, 0, 248), 0 0 1px rgb(23, 23, 255);
+            color: #0e0033;
+        }
+        .form-group.file-input {
+            display: none;
+        }
+        .gpa-input {
+    display: none;
+  }
+  .file-input {
+    display: none;
+  }
+
+  .second{
+    background-color: rgb(155, 155, 207);
+  margin-right:auto;
+  margin-left: auto;
+  padding: 15px 12px;
+  text-align:default;
+        }
+
+        ::placeholder{
+        background-color:rgb(252, 249, 249);
+    color: rgb(161, 155, 155);
+    }
+    .heading{
+        text-align: center;
+        font-size: 45px;
+    text-decoration: underline;
+    background-color: #4f36db;
+color: rgb(2, 2, 2);
+ }
+ input[type="submit"] {
+    background-color: #4caf50;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+  }
+  input[type="submit"]:hover {
+    background-color: #3b8840;
+    font-size: 1.1rem;
+  }
+.footer{
+    text-align: center;
+    color: rgb(198, 198, 207);
+    background-color:  rgb(67, 109, 126);
+}
+.header{
+    text-align:center;
+    background-color: #452bd8;
+}
+    </style>
+</head>
+<body>  
+  
+    <div class="container" >
+        <div class="header"> 
+            <header>
+                    <img src="logo.jpg" height="100px" width="300px">
+                </header>
+            </div>
+        <form class="form" action="submit2.html">
+            <div class="heading">Student's Registration Form</div>
+            <div class="second">
+                <div class="formgroup">
+                    <label for="name">First Name:</label><br>
+                    <input type="text" placeholder="Enter your first name" required><br><br>
+                </div>
+                <div class="formgroup">
+                    <label for="name">Last Name:</label><br>
+                    <input type="text" placeholder="Enter your last name" required><br><br>
+                </div>
+                <div class="formgroup">
+                    <label for="permanent-address">Permanent Address:</label><br>
+                    <input type="text" placeholder="Enter your permanent address" required><br><br>
+                </div>
+                <div class="formgroup">
+                    <label for="temporary-address">Temporary Address:</label><br>
+                    <input type="text" placeholder="Enter your temporary address" required><br><br>
+                </div>
+                <div class="formgroup">
+                    <label for="gender">Gender:</label><br>
+                    <select required>
+                        <option value="male">Male</option>
+                        <option value="female">Female</option>
+                        <option value="others">Others</option>
+                    </select><br><br>
+                </div>
+                <div class="formgroup">
+                    <label for="dob">Date of Birth:</label><br>
+                    <input type="date" required><br><br>
+                </div>
+                <div class="formgroup">
+                    <label for="contact">Contact Number:</label><br>
+                    <input type="tel" maxlength="10" placeholder="Enter your number" required><br><br>
+                </div>
+                <div class="formgroup">
+                    <label for="email">Email:</label><br>
+                    <input type="email" placeholder="abc@example.com" required><br><br>
+                </div>
+                <div class="formgroup">
+                    <label for="nationality">Nationality:</label><br>
+                    <input type="text" placeholder="Enter your nationality" required><br><br>
+                </div>
+                <div class="formgroup">
+                    <label for="education">Education Level:</label>
+                    <select id="education" name="education" onchange="showGpaInput(this.value)" required>
+                        <option value="">Select</option>
+                        <option value="SEE">SEE</option>
+                        <option value="+2">+2 </option>
+                    </select>
+                </div>
+                <div id="see_gpa_input" class="formgroup gpa-input">
+                    <label for="see_gpa">SEE GPA:</label>
+                    <input type="number" id="see_gpa" name="see_gpa" step="0.01">
+                </div>
+                <div id="+2_gpa_input" class="formgroup gpa-input">
+                    <label for="+2_gpa">+2 GPA:</label>
+                    <input type="number" id="+2_gpa" name="+2_gpa" step="0.01">
+                </div>
+
+                <div class="formgroup">
+                    <label for="course">Select the course you are intrested:</label><br>
+                    <select required>
+                        <option value="BCA">BCA</option>
+                        <option value="Bsc.CSIT">Bsc.CSIT</option>
+                        
+                    </select><br><br>
+                </div>
+
+                <div class="formgroup">
+                    <label>Interested in Scholarship?</label><br>
+                    <input type="radio" id="yes" name="scholarship" value="yes" onchange="showFileInput(this)"> Yes<br>
+                    <input type="radio" id="no" name="scholarship" value="no" onchange="hideFileInput(this)" checked> No<br>
+                </div>
+                <div id="file_input" class="formgroup file-input">
+                    <label for="file">Provide supporting File for scholarship:</label>
+                    <input type="file" id="file" name="file">
+                </div>
+                <div class="formgroup">
+                    <input type="submit" value="Submit">
+                </div>
+                
+            </div>
+            <div class="footer">
+                <footer>copyright &#169; Kathmandu College of Technology <br> lokanthali , bhaktapur</footer>
+            </div>
+        </form>
+    </div>
+  
+
+
+
+    <script>
+          function showGpaInput(educationLevel) {
+      const seeGpaInput = document.getElementById('see_gpa_input');
+      const plus2GpaInput = document.getElementById('+2_gpa_input');
+      
+      if (educationLevel === 'SEE') {
+          seeGpaInput.style.display = 'block';
+          plus2GpaInput.style.display = 'none';
+      } else if (educationLevel === '+2') {
+          seeGpaInput.style.display = 'none';
+          plus2GpaInput.style.display = 'block';
+      } else {
+          seeGpaInput.style.display = 'none';
+          plus2GpaInput.style.display = 'none';
+      }
+  }
+  function showFileInput(selectedOption) {
+    if (selectedOption.value === 'yes') {
+        document.getElementById('file_input').style.display = 'block';
+    }
+}
+
+function hideFileInput(selectedOption) {
+    if (selectedOption.value === 'no') {
+        document.getElementById('file_input').style.display = 'none';
+    }
+}
+
+    </script>
+</body>
+</html>
