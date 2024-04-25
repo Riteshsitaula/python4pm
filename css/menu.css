@@ -1,0 +1,63 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family:cursive;
+}
+
+.menu{
+    width: 100%;
+    background: grey;
+}
+
+.container{
+    width: 90%;
+margin: auto;
+}
+nav ul{
+    list-style-type: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+nav ul li{
+    line-height: 40px;
+    min-width: 100px;
+    text-align: center;
+    cursor: pointer;
+}
+nav ul li a{
+    text-decoration: none;
+    color: black;
+    font-size: 1.2rem;
+}
+nav ul li :hover{
+    background: wheat;
+    color: rgb(197, 5, 5);
+    font-size: 1.5rem;
+    box-shadow: 0 0 10px rgb(197, 109, 109), 0 0 12px  rgb(197, 109, 109), 0 0 15px rgb(197, 109, 109);
+
+}
+nav ul li ul{
+    display: flex;
+    flex-direction: column;
+    display: none;
+    position: absolute;
+    background-color: gray;
+}
+nav ul li:hover ul{
+    display: block;
+
+    background: wheat;
+    color: rgb(10, 7, 7);
+    font-size: 1.2rem;
+    box-shadow: 0 0 10px rgb(204, 180, 180), 0 0 12px  rgb(204, 180, 180), 0 0 15px rgb(204, 180, 180);
+
+}
+
+nav ul li:hover ul li :hover{
+
+background: wheat;
+color: rgb(10, 7, 7);
+font-size: 1.5rem;
+box-shadow: 0 0 10px rgb(66, 32, 32), 0 0 12px  rgb(66, 32, 32), 0 0 15px rgb(66, 32, 32);
+}
