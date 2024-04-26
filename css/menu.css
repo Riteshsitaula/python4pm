@@ -22,7 +22,7 @@ nav ul{
 nav ul li{
     line-height: 40px;
     min-width: 100px;
-    text-align: center;
+    text-align: right;
     cursor: pointer;
 }
 nav ul li a{
