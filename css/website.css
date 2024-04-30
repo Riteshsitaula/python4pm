@@ -185,7 +185,7 @@ height: 100%;
 }
 
 .course-read-more{
-    
+    cursor: pointer;
     position:absolute;
     bottom: 10px;
     width: 150px;
@@ -195,6 +195,7 @@ height: 100%;
     text-align: center;
     border: none;
     border-radius: 5px;
+    left: 100px;
 }
 
 footer{
