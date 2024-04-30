@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <blockquote>
+<label for="fn"> First name</label><br>
+<input type="number" id="fn"> <br>
+
+<label for="sn"> second name</label><br>
+<input type="number" id="sn"> <br>
+
+<br><button onclick="add()">Add</button><br>
+<input type="number" readonly id="result"> 
+
+    </blockquote>
+
+    <script>
+function add(){
+    let fn = parseInt (document.getElementById ('fn').value);
+    let sn = parseInt (document.getElementById ('sn').value);
+    let result= fn+sn;
+    document.getElementById('result').value = result;
+}
+
+    </script>
+</body>
+</html>

@@ -20,6 +20,25 @@ let username="ram";
 // }
 // getUser()
 
+
+alert("hello")
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 // arayfunction
 // call back function
 // arrow function 
