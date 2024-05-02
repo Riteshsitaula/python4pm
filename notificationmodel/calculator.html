@@ -17,6 +17,15 @@
 <br><button onclick="add()">Add</button><br>
 <input type="number" readonly id="result"> 
 
+<br><button onclick="sub()">Sub</button><br>
+<input type="number" readonly id="result1"> 
+
+<br><button onclick="mul()">mul</button><br>
+<input type="number" readonly id="result2"> 
+
+<br><button onclick="div()">Div</button><br>
+<input type="number" readonly id="result3"> 
+
     </blockquote>
 
     <script>
@@ -26,6 +35,28 @@ function add(){
     let result= fn+sn;
     document.getElementById('result').value = result;
 }
+
+function sub(){
+    let fn = parseInt (document.getElementById ('fn').value);
+    let sn = parseInt (document.getElementById ('sn').value);
+    let result1= fn-sn;
+    document.getElementById('result1').value = result1;
+}
+
+function mul(){
+    let fn = parseInt (document.getElementById ('fn').value);
+    let sn = parseInt (document.getElementById ('sn').value);
+    let result2= fn*sn;
+    document.getElementById('result2').value = result2;
+}
+
+function div(){
+    let fn = parseInt (document.getElementById ('fn').value);
+    let sn = parseInt (document.getElementById ('sn').value);
+    let result3= fn-sn;
+    document.getElementById('result3').value = result3;
+}
+
 
     </script>
 </body>
