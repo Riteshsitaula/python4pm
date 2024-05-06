@@ -9,7 +9,7 @@ function imageSlider(){
         start=0;
     }
     imageBox[start].style.display="block";
-    setTimeout(imageSlider,2000);
+    setTimeout(imageSlider,1000);
     start++;
 }
 imageSlider();
